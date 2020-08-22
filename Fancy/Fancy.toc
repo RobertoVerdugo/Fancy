@@ -1,0 +1,6 @@
+## Interface: 80000
+## Title: Fancy
+## Author: Mark, Geoff, Pelao and Twice
+## Version: 1.0f
+##Notes: Fancy yuuuu Radas chupalo
+main.lua
