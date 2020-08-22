@@ -4,7 +4,7 @@ canciones = {"\\fancy.ogg","\\moreandmore.ogg","\\feelspecial.ogg","\\likey.ogg"
 fondos = {"\\momo.tga","\\mina.tga","\\sana.tga","\\tzuyu.tga","\\dahyun.tga","\\chae.tga","\\jeong.tga","\\jihyo.tga","\\nayeon.tga"}
 
 local f = CreateFrame("Frame")
-f:RegisterEvent("QUEST_PROGRESS")
+f:RegisterEvent("PLAYER_LEVEL_UP")
 f:SetFrameStrata("BACKGROUND");
 f:SetClampedToScreen(true)
 f:SetAllPoints(UIParent)
