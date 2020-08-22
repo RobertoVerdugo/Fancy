@@ -1,17 +1,29 @@
+math.randomseed(os.time())
+
+local ruta = "Interface\\Addons\\Fancy"
+local random_fondos = math.random(1,9);
+local canciones = {"\\fancy.ogg","\\moreandmore.ogg","\\feelspecial.ogg","\\likey.ogg","\\tt.ogg","\\trickit.ogg","\\lovefoolish.ogg","\\happyhappy.ogg","\\bdz.ogg"}
+local fondos = {"\\momo.tga","\\mina.tga","\\sana.tga","\\tzuyu.tga","\\dahyun.tga","\\chae.tga","\\jeong.tga","\\jihyo.tga","\\nayeon.tga"}
+
 local f = CreateFrame("Frame")
 f:RegisterEvent("PLAYER_LEVEL_UP")
 f:SetFrameStrata("BACKGROUND");
 f:SetClampedToScreen(true)
 f:SetAllPoints(UIParent)
+
+
 local t = f:CreateTexture(nil, "BACKGROUND");
-t:SetTexture("Interface\\Addons\\Fancy\\fancy.tga");
+t:SetTexture(ruta .. fondos[random_fondos]);
 t:SetAlpha(0.4);
 t:SetAllPoints(frame);
+
+
 f:Hide();
 
 f:SetScript("OnEvent",
 	function(self, event, ...)
-		PlaySoundFile("Interface\\Addons\\Fancy\\fancy.ogg", "Master")
+		local random_musica = math.random(1,9);
+		PlaySoundFile(ruta .. canciones[random_musica], "Master")
 		UIFrameFlash(f, 0.5, 0.5, 8, false);
 		end)
 
