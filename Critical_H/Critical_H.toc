@@ -1,0 +1,6 @@
+## Interface: 80000
+## Title: Critical_H
+## Author: Pelao
+## Version: 1.0f
+##Notes: Bakka!
+main.lua
